@@ -1,0 +1,8 @@
+void upgrade( struct student *child ) {
+    if( child->sex == 'M' && child->gpa >= 3.00 ) {
+        child->gpa += child->gpa * 0.10;
+    }
+    else if( child->sex == 'F' && child->gpa >= 3.00 ) {
+        child->gpa += child->gpa * 0.20;
+    }
+}
